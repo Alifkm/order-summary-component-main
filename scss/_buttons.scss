@@ -1,0 +1,53 @@
+%btn {
+    display: $main-display;
+    height: 30px;
+}
+
+@mixin setColor($color1, $color2) {
+    background-color: $color1;
+    color: $color2;
+}
+
+@mixin fontProperty {
+    font-size: 12px;
+    font-weight: 600;    
+}
+
+@mixin btnBody {
+    margin: auto;
+    border: none;
+    height: 30px;
+    width: 240px;
+}
+
+.btn-proceed {
+    margin: 20px 30px 10px 30px;
+
+    button {    
+        @include fontProperty();
+        @include setColor($primary-blue, $primary-pale-blue);
+        @include btnBody();
+        border-radius: 7px;    
+    }
+
+    button:hover {
+        cursor: pointer;
+        background-color: lighten($primary-blue, 10%);
+    }
+
+}
+
+.btn-cancel {
+    margin: 0 30px 20px 30px;
+    
+    button {
+        @include fontProperty();
+        @include btnBody();
+        @include setColor($light-color, $neutral-desaturated-blue);
+    }
+
+    button:hover {
+        cursor: pointer;
+        color: $neutral-dark-blue;
+    }
+}

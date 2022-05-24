@@ -1,0 +1,112 @@
+@import "config";
+@import "buttons";
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    background-color: $primary-pale-blue;
+    font-family: 'Red Hat Display', sans-serif;
+    line-height: 1.6;
+    height: 100%;
+}
+
+.container {
+    display: $main-display;
+    height: 100%;
+    justify-content: center;
+
+    .card {
+        background-color: $light-color;
+        align-self: center;
+        border-radius: 7px;
+        width: 300px;
+
+        .image-wrapper {
+            img {
+                border-radius: 7px 7px 0 0;
+            }
+        }
+
+        .title-wrapper {
+            margin: 10px 0 10px 0;
+            display: $main-display;
+            justify-content: center;
+            h1 {
+                align-self: center;
+                color: $neutral-dark-blue;
+                font-size: 20px;
+                font-weight: 700;
+            }
+            
+        }
+
+        .subtitle-wrapper {
+            margin: 10px 20px 10px 20px;
+            display: $main-display;
+            justify-content: center;
+            
+            h2 {
+                text-align: center;
+                align-self: center;
+                color: $neutral-desaturated-blue;
+                font-size: 12px;
+                font-weight: 400;
+            }
+        }
+
+        .extras {
+            margin: 20px 30px 10px 30px;
+            padding: 10px 10px 10px 10px;
+            display: $main-display;
+            justify-content: space-between;
+            background-color: lighten($neutral-desaturated-blue, 40%);
+            border-radius: 7px;
+
+            .annual-plan {
+                display: $main-display;
+                align-items: center;
+
+                img {
+                    width: 36px;
+                    height: 36px;
+                    margin-right: 10px;
+                }
+    
+                h3 {
+                    color: $neutral-desaturated-blue;
+                    font-size: 12px;
+                    font-weight: 400;
+                }
+
+                span {
+                    color: $neutral-dark-blue;
+                    font-weight: 600;
+                }
+
+            }
+
+            .a-change {
+                display: $main-display;
+                align-items: center;
+
+                a {
+                    font-size: 12px;
+                    font-weight: 600;
+                }
+
+                a:hover {
+                    cursor: pointer;
+                    color: lighten($primary-blue, 10%);;
+                    text-decoration: none;
+                }
+
+            }
+            
+        }
+    }
+}
+

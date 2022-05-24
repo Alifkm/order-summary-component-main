@@ -1,0 +1,175 @@
+.btn-proceed {
+  margin: 20px 30px 10px 30px;
+}
+
+.btn-proceed button {
+  font-size: 12px;
+  font-weight: 600;
+  background-color: #3829e0;
+  color: #e0e8ff;
+  margin: auto;
+  border: none;
+  height: 30px;
+  width: 240px;
+  border-radius: 7px;
+}
+
+.btn-proceed button:hover {
+  cursor: pointer;
+  background-color: #6255e7;
+}
+
+.btn-cancel {
+  margin: 0 30px 20px 30px;
+}
+
+.btn-cancel button {
+  font-size: 12px;
+  font-weight: 600;
+  margin: auto;
+  border: none;
+  height: 30px;
+  width: 240px;
+  background-color: white;
+  color: #7280a7;
+}
+
+.btn-cancel button:hover {
+  cursor: pointer;
+  color: #1f2f56;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  background-color: #e0e8ff;
+  font-family: 'Red Hat Display', sans-serif;
+  line-height: 1.6;
+  height: 100%;
+}
+
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.container .card {
+  background-color: white;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  border-radius: 7px;
+  width: 300px;
+}
+
+.container .card .image-wrapper img {
+  border-radius: 7px 7px 0 0;
+}
+
+.container .card .title-wrapper {
+  margin: 10px 0 10px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.container .card .title-wrapper h1 {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  color: #1f2f56;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.container .card .subtitle-wrapper {
+  margin: 10px 20px 10px 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.container .card .subtitle-wrapper h2 {
+  text-align: center;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  color: #7280a7;
+  font-size: 12px;
+  font-weight: 400;
+}
+
+.container .card .extras {
+  margin: 20px 30px 10px 30px;
+  padding: 10px 10px 10px 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-color: #eff1f5;
+  border-radius: 7px;
+}
+
+.container .card .extras .annual-plan {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container .card .extras .annual-plan img {
+  width: 36px;
+  height: 36px;
+  margin-right: 10px;
+}
+
+.container .card .extras .annual-plan h3 {
+  color: #7280a7;
+  font-size: 12px;
+  font-weight: 400;
+}
+
+.container .card .extras .annual-plan span {
+  color: #1f2f56;
+  font-weight: 600;
+}
+
+.container .card .extras .a-change {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container .card .extras .a-change a {
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.container .card .extras .a-change a:hover {
+  cursor: pointer;
+  color: #6255e7;
+  text-decoration: none;
+}
